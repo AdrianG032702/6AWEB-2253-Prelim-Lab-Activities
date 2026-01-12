@@ -1,0 +1,55 @@
+<div class="demo-title">Angular Pipes Demo</div>
+
+<hr>
+
+<h2>1. Date Pipe</h2>
+<p>Default Date: {{ presentDate | date }}</p>
+<p>Short Date: {{ presentDate | date:'shortDate' }}</p>
+<p>Full Date: {{ presentDate | date:'fullDate' }}</p>
+<p>Custom Format: {{ presentDate | date:'M/dd/yyyy' }}</p>
+<p>Time: {{ presentDate | date:'h:mm a' }}</p>
+
+<hr>
+
+<h2>2. UpperCase & LowerCase Pipe</h2>
+<p>Uppercase Name: {{ name | uppercase }}</p>
+<p>Lowercase Date: {{ presentDate | date:'medium' | lowercase }}</p>
+
+<hr>
+
+<h2>3. Currency Pipe</h2>
+<p>USD (Default): {{ price | currency }}</p>
+<p>EUR: {{ price | currency:'EUR' }}</p>
+<p>JPY: {{ price | currency:'JPY' }}</p>
+
+<hr>
+
+<h2>4. Slice Pipe</h2>
+<p>From index 2: {{ Fruits | slice:2 }}</p>
+<p>From 1 to 4: {{ Fruits | slice:1:4 }}</p>
+<p>Last two items: {{ Fruits | slice:-2 }}</p>
+<p>From -4 to -2: {{ Fruits | slice:-4:-2 }}</p>
+
+<hr>
+
+<h2>5. Decimal Pipe</h2>
+<p>Decimal 1: {{ decimalNum1 | number }}</p>
+<p>Decimal 2: {{ decimalNum2 | number:'1.1-2' }}</p>
+
+<hr>
+
+<h2>6. Percent Pipe</h2>
+<p>Discount: {{ discountRate | percent }}</p>
+<p>Formatted Discount: {{ discountRate | percent:'1.2-2' }}</p>
+
+<hr>
+
+<h2>7. Title Case Pipe</h2>
+<p>Original Text: {{ courseTitle }}</p>
+<p>Title Case: {{ courseTitle | titlecase }}</p>
+
+<hr>
+
+<h2>8. JSON Pipe</h2>
+<p>Student Object:</p>
+<pre>{{ student | json }}</pre>
